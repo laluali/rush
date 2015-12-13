@@ -1,0 +1,224 @@
+<div>
+	<div class="row">
+		<div class="col-xs-2">
+			<h1>Fruits</h1>
+		</div>
+		<div class="col-xs-10">
+			<button type="button" class="btn btn-success" ng-click="checkOut()">Check-out&nbsp({{list.length}})&nbsp<span class="glyphicon glyphicon-shopping-cart"></span></button>
+		</div>		
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading block">Brinjal</div>
+				<div class="panel-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<div class="400">
+							  	<img class="img-responsive" alt="fresh.." src="images/veggies/400/brinjal.jpg">						  	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="blockContent">&nbspRate:{{brinjal}}/250gms</p>
+							  	<p class="blockContent">&nbspQuantity:<input type="number" min="0" max="5000" step="250" ng-model="formveggies.brinjalquantity">gms</p>
+							</td>  	
+						</tr>
+					</table>				
+				</div>
+				<div class="panel-footer" align="center">
+				<div class="btn-group">
+	  				<button type="button" class="btn btn-default"><p class="price">Price:&nbsp{{formveggies.brinjalquantity * (brinjal/250)}}</p></button>
+	  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	   					<span class="sr-only">Toggle Dropdown</span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="javascript:void(0)" ng-click="addToCart(formveggies.brinjalquantity,formveggies.brinjalquantity * (brinjal/250),'brinjal')">Add to Cart</a></li>
+					    <li><a href="javascript:void(0)" ng-click="">Buy Now</a></li>
+					  </ul>
+					</div>								
+	    		</div>						
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading block">Chana</div>
+				<div class="panel-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<div class="400">
+							  	<img class="img-responsive" alt="fresh.." src="images/veggies/400/chana.jpg">						  	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="blockContent">&nbspRate:{{chana}}/250gms</p>
+							  	<p class="blockContent">&nbspQuantity:<input type="number" min="0" max="5000" step="250" ng-model="formveggies.chanaquantity">gms</p>
+							</td>  	
+						</tr>
+					</table>				
+				</div>
+				<div class="panel-footer" align="center">
+				<div class="btn-group">
+	  				<button type="button" class="btn btn-default"><p class="price">Price:&nbsp{{formveggies.chanaquantity * (chana/250)}}</p></button>
+	  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	   					<span class="sr-only">Toggle Dropdown</span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="javascript:void(0)" ng-click="addToCart(formveggies.chanaquantity,formveggies.chanaquantity * (chana/250),'chana')">Add to Cart</a></li>
+					    <li><a href="javascript:void(0)">Buy Now</a></li>
+					  </ul>
+					</div>								
+	    		</div>						
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading block">Cocumber</div>
+				<div class="panel-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<div class="400">
+							  	<img class="img-responsive" alt="fresh.." src="images/veggies/400/cocumber.jpg">						  	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="blockContent">&nbspRate:{{cocumber}}/250gms</p>
+							  	<p class="blockContent">&nbspQuantity:<input type="number" min="0" max="5000" step="250" ng-model="formveggies.cocumberquantity">gms</p>
+							</td>  	
+						</tr>
+					</table>				
+				</div>
+				<div class="panel-footer" align="center">
+				<div class="btn-group">
+	  				<button type="button" class="btn btn-default"><p class="price">Price:&nbsp{{formveggies.cocumberquantity * (cocumber/250)}}</p></button>
+	  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	   					<span class="sr-only">Toggle Dropdown</span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="javascript:void(0)" ng-click="addToCart(formveggies.cocumberquantity,formveggies.cocumberquantity * (cocumber/250),'cocumber')">Add to Cart</a></li>
+					    <li><a href="javascript:void(0)">Buy Now</a></li>
+					  </ul>
+					</div>								
+	    		</div>						
+			</div>
+		</div>
+	</div>
+	<div class="row">
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading block">Corn</div>
+				<div class="panel-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<div class="400">
+							  	<img class="img-responsive" alt="fresh.." src="images/veggies/400/corn.jpg">						  	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="blockContent">&nbspRate:{{corn}}/250gms</p>
+							  	<p class="blockContent">&nbspQuantity:<input type="number" min="0" max="5000" step="250" ng-model="formveggies.cornquantity">gms</p>
+							</td>  	
+						</tr>
+					</table>				
+				</div>
+				<div class="panel-footer" align="center">
+				<div class="btn-group">
+	  				<button type="button" class="btn btn-default"><p class="price">Price:&nbsp{{formveggies.cornquantity * (corn/250)}}</p></button>
+	  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	   					<span class="sr-only">Toggle Dropdown</span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="javascript:void(0)" ng-click="addToCart(formveggies.cornquantity,formveggies.cornquantity * (corn/250),'corn')">Add to Cart</a></li>
+					    <li><a href="javascript:void(0)">Buy Now</a></li>
+					  </ul>
+					</div>								
+	    		</div>						
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading block">Masoor</div>
+				<div class="panel-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<div class="400">
+							  	<img class="img-responsive" alt="fresh.." src="images/veggies/400/masoor.jpg">						  	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="blockContent">&nbspRate:{{masoor}}/250gms</p>
+							  	<p class="blockContent">&nbspQuantity:<input type="number" min="0" max="5000" step="250" ng-model="formveggies.masoorquantity">gms</p>
+							</td>  	
+						</tr>
+					</table>				
+				</div>
+				<div class="panel-footer" align="center">
+				<div class="btn-group">
+	  				<button type="button" class="btn btn-default"><p class="price">Price:&nbsp{{formveggies.masoorquantity * (masoor/250)}}</p></button>
+	  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	   					<span class="sr-only">Toggle Dropdown</span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="javascript:void(0)" ng-click="addToCart(formveggies.masoorquantity,formveggies.masoorquantity * (masoor/250),'masoor')">Add to Cart</a></li>
+					    <li><a href="javascript:void(0)">Buy Now</a></li>
+					  </ul>
+					</div>								
+	    		</div>						
+			</div>
+		</div>
+		<div class="col-xs-4">
+			<div class="panel panel-default">
+				<div class="panel-heading block">Dates</div>
+				<div class="panel-body">
+					<table class="table table-condensed">
+						<tr>
+							<td>
+								<div class="400">
+							  	<img class="img-responsive" alt="fresh.." src="images/fruits/Dates.jpg">						  	
+								</div>
+							</td>
+						</tr>
+						<tr>
+							<td>
+								<p class="blockContent">&nbspRate:{{Dates}}/250gms</p>
+							  	<p class="blockContent">&nbspQuantity:<input type="number" min="0" max="5000" step="250" ng-model="formfruits.Datesquantity">gms</p>
+							</td>  	
+						</tr>
+					</table>				
+				</div>
+				<div class="panel-footer" align="center">
+				<div class="btn-group">
+	  				<button type="button" class="btn btn-default"><p class="price">Price:&nbsp{{formfruits.Datesquantity * (Dates/250)}}</p></button>
+	  				<button type="button" class="btn btn-info dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	    				<span class="glyphicon glyphicon-shopping-cart"></span>
+	   					<span class="sr-only">Toggle Dropdown</span>
+	  				</button>
+	  				<ul class="dropdown-menu">
+	    				<li><a href="javascript:void(0)" ng-click="addToCart(formfruits.Datesquantity,formfruits.Datesquantity * (Dates/250),'dates')">Add to Cart</a></li>
+					    <li><a href="javascript:void(0)">Buy Now</a></li>
+					  </ul>
+					</div>								
+	    		</div>						
+			</div>
+		</div>
+	</div>
+</div>

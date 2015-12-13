@@ -1,0 +1,37 @@
+<form>
+	<div>
+		<table class="table table-hover">
+			<tbody>
+				<tr>
+					<th>Name</th>
+					<th>Quantity</th>
+					<!-- <th>Rate</th> -->
+					<th>Total</th>
+				</tr>			
+				<tr ng-repeat="r in list">
+					<td>{{r.itemName}}</td>
+					<td>{{r.quant}}&nbspgms</td>
+					<!-- <td>{{r.quant / r.price}}</td> -->
+					<td>{{r.price}}</td>	
+				</tr>
+			</tbody>	
+		</table>		
+	</div>
+	<div style="content: hidden;">
+	</div>
+	<button ng-click="sendEmail('chaudharylalit91@gmail.com','vegRush',list)">Place Order</button>
+	<button>mailto</button>
+</form>
+<!-- <script type="text/javascript">
+var body_message = $('#message').value;
+var email = 'chaudharylalit91@gmail.com';
+var subject = 'vegRush';
+$('button').click(function() {
+
+    var mailto_link = 'mailto:' + email + '?subject=' + subject + '&body=' + body_message;
+
+    win = window.open(mailto_link, 'emailWindow');
+    if (win && win.open && !win.closed) win.close();
+
+});
+</script> -->
